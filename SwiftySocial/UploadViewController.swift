@@ -45,7 +45,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         let mediaFolder = storageRef.child("userMedia")
         if let imgData = uploadImageView.image?.jpegData(compressionQuality: 0.6) {
             let imgRef = mediaFolder.child("image.jpg")
-            imgRef.putData(imgData) { (strMetaData, error) in
+            imgRef.putData(imgData, metadata: nil) { (strMetaData, error) in
                 if error != nil {
                     self.errorMessage(titleInput: "Error!", messageInput: error?.localizedDescription ?? "Please try again" ) }
                 else {
