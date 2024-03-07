@@ -202,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2z-Pa-hrl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-663" y="420"/>
+            <point key="canvasLocation" x="-663" y="403"/>
         </scene>
         <!--Upload-->
         <scene sceneID="stI-cJ-vd5">
@@ -211,14 +211,66 @@
                     <view key="view" contentMode="scaleToFill" id="Ckl-yS-p9r">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uploadIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kSP-QY-KVn">
+                                <rect key="frame" x="16" y="86" width="361" height="408"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L05-6N-LmU">
+                                <rect key="frame" x="16" y="510" width="92" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Pm9-pt-dDo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CgU-uO-1zf">
+                                <rect key="frame" x="16" y="539" width="361" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="6jf-jJ-gUb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIW-Fm-yys">
+                                <rect key="frame" x="16" y="633" width="361" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="HDp-Au-LyC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Share"/>
+                                <connections>
+                                    <action selector="shareButtonClicked:" destination="fA6-Bk-Sj9" eventType="touchUpInside" id="R70-QO-zQ6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="WDO-An-34t"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CgU-uO-1zf" firstAttribute="leading" secondItem="kIW-Fm-yys" secondAttribute="leading" id="0qp-gk-Jim"/>
+                            <constraint firstItem="kSP-QY-KVn" firstAttribute="leading" secondItem="L05-6N-LmU" secondAttribute="leading" id="0t0-sv-gOT"/>
+                            <constraint firstItem="CgU-uO-1zf" firstAttribute="trailing" secondItem="kIW-Fm-yys" secondAttribute="trailing" id="3mt-y8-SVt"/>
+                            <constraint firstItem="kSP-QY-KVn" firstAttribute="leading" secondItem="Ckl-yS-p9r" secondAttribute="leadingMargin" id="Dm8-b3-x9M"/>
+                            <constraint firstItem="kSP-QY-KVn" firstAttribute="top" secondItem="WDO-An-34t" secondAttribute="top" constant="86" id="J0n-Vz-lUb"/>
+                            <constraint firstItem="kSP-QY-KVn" firstAttribute="trailing" secondItem="Ckl-yS-p9r" secondAttribute="trailingMargin" id="Kud-Oj-VBn"/>
+                            <constraint firstItem="CgU-uO-1zf" firstAttribute="top" secondItem="L05-6N-LmU" secondAttribute="bottom" constant="8" id="M7y-y8-QVW"/>
+                            <constraint firstItem="L05-6N-LmU" firstAttribute="leading" secondItem="CgU-uO-1zf" secondAttribute="leading" id="VA2-GC-We2"/>
+                            <constraint firstItem="L05-6N-LmU" firstAttribute="top" secondItem="kSP-QY-KVn" secondAttribute="bottom" constant="16" id="W8N-Nf-Qgx"/>
+                            <constraint firstItem="kIW-Fm-yys" firstAttribute="top" secondItem="CgU-uO-1zf" secondAttribute="bottom" constant="60" id="uIb-73-gYW"/>
+                            <constraint firstItem="kSP-QY-KVn" firstAttribute="trailing" secondItem="CgU-uO-1zf" secondAttribute="trailing" id="vXu-jO-zfN"/>
+                            <constraint firstItem="WDO-An-34t" firstAttribute="bottom" secondItem="kIW-Fm-yys" secondAttribute="bottom" constant="135" id="wIA-YL-KzI"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="plus.app.fill" catalog="system" id="Dtf-Fc-J3z"/>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="CgU-uO-1zf" id="O10-pi-y4m"/>
+                        <outlet property="shareButton" destination="kIW-Fm-yys" id="6xn-jG-QY9"/>
+                        <outlet property="uploadImageView" destination="kSP-QY-KVn" id="hZD-IL-bTp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tq-fX-z4s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244" y="-126"/>
+            <point key="canvasLocation" x="243.51145038167937" y="-108.45070422535211"/>
         </scene>
         <!--Feed-->
         <scene sceneID="lzA-oR-WuX">
@@ -262,6 +314,7 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
         <image name="tempLogo" width="1024" height="1024"/>
+        <image name="uploadIcon" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

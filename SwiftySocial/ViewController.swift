@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let gestureRecog1 = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(gestureRecog1)
     }
     
     @IBAction func passResetButtonClicked(_ sender: Any) {
@@ -34,6 +36,7 @@ class ViewController: UIViewController {
         else { self.errorMessage(titleInput: "Error!", messageInput: "Please check e-mail and password") }
         
     }
+    @objc func hideKeyboard() { view.endEditing(true) }
     
     @IBAction func registerButtonClicked(_ sender: Any) {
         performSegue(withIdentifier: "toRegisterVC", sender: nil)
