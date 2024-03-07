@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECA6C75F2B9A26B300B76979 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6C75E2B9A26B300B76979 /* FeedViewController.swift */; };
+		ECA6C7612B9A2ACD00B76979 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6C7602B9A2ACD00B76979 /* UploadViewController.swift */; };
+		ECA6C7652B9A2B4B00B76979 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6C7642B9A2B4A00B76979 /* ProfileViewController.swift */; };
 		ECDF85842B94BBD70009EA9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF85832B94BBD70009EA9A /* AppDelegate.swift */; };
 		ECDF85862B94BBD70009EA9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF85852B94BBD70009EA9A /* SceneDelegate.swift */; };
 		ECDF85882B94BBD70009EA9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF85872B94BBD70009EA9A /* ViewController.swift */; };
@@ -16,6 +19,16 @@
 		ECDF859B2B94BBD90009EA9A /* SwiftySocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF859A2B94BBD90009EA9A /* SwiftySocialTests.swift */; };
 		ECDF85A52B94BBD90009EA9A /* SwiftySocialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF85A42B94BBD90009EA9A /* SwiftySocialUITests.swift */; };
 		ECDF85A72B94BBD90009EA9A /* SwiftySocialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF85A62B94BBD90009EA9A /* SwiftySocialUITestsLaunchTests.swift */; };
+		ECDF85B52B94D18C0009EA9A /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF85B42B94D18C0009EA9A /* RegViewController.swift */; };
+		ECDF85B62B94D18C0009EA9A /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF85B42B94D18C0009EA9A /* RegViewController.swift */; };
+		ECDF85B72B94D18C0009EA9A /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF85B42B94D18C0009EA9A /* RegViewController.swift */; };
+		ECDF85BD2B94D7DF0009EA9A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ECDF85BC2B94D7DF0009EA9A /* FirebaseAuth */; };
+		ECDF85BF2B94D7DF0009EA9A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ECDF85BE2B94D7DF0009EA9A /* FirebaseFirestore */; };
+		ECDF85C12B94D7DF0009EA9A /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ECDF85C02B94D7DF0009EA9A /* FirebaseFirestoreSwift */; };
+		ECDF85C32B94D7DF0009EA9A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = ECDF85C22B94D7DF0009EA9A /* FirebaseStorage */; };
+		ECDF85C52B94E42D0009EA9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECDF85C42B94E42D0009EA9A /* GoogleService-Info.plist */; };
+		ECDF85C62B94E42D0009EA9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECDF85C42B94E42D0009EA9A /* GoogleService-Info.plist */; };
+		ECDF85C72B94E42D0009EA9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECDF85C42B94E42D0009EA9A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ECA6C75E2B9A26B300B76979 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		ECA6C7602B9A2ACD00B76979 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		ECA6C7642B9A2B4A00B76979 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ECDF85802B94BBD70009EA9A /* SwiftySocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftySocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDF85832B94BBD70009EA9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECDF85852B94BBD70009EA9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,8 @@
 		ECDF85A02B94BBD90009EA9A /* SwiftySocialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftySocialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDF85A42B94BBD90009EA9A /* SwiftySocialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySocialUITests.swift; sourceTree = "<group>"; };
 		ECDF85A62B94BBD90009EA9A /* SwiftySocialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySocialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ECDF85B42B94D18C0009EA9A /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
+		ECDF85C42B94E42D0009EA9A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDF85BD2B94D7DF0009EA9A /* FirebaseAuth in Frameworks */,
+				ECDF85C32B94D7DF0009EA9A /* FirebaseStorage in Frameworks */,
+				ECDF85BF2B94D7DF0009EA9A /* FirebaseFirestore in Frameworks */,
+				ECDF85C12B94D7DF0009EA9A /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,10 +124,15 @@
 				ECDF85832B94BBD70009EA9A /* AppDelegate.swift */,
 				ECDF85852B94BBD70009EA9A /* SceneDelegate.swift */,
 				ECDF85872B94BBD70009EA9A /* ViewController.swift */,
+				ECDF85B42B94D18C0009EA9A /* RegViewController.swift */,
+				ECA6C75E2B9A26B300B76979 /* FeedViewController.swift */,
+				ECA6C7602B9A2ACD00B76979 /* UploadViewController.swift */,
+				ECA6C7642B9A2B4A00B76979 /* ProfileViewController.swift */,
 				ECDF85892B94BBD70009EA9A /* Main.storyboard */,
 				ECDF858C2B94BBD80009EA9A /* Assets.xcassets */,
 				ECDF858E2B94BBD80009EA9A /* LaunchScreen.storyboard */,
 				ECDF85912B94BBD80009EA9A /* Info.plist */,
+				ECDF85C42B94E42D0009EA9A /* GoogleService-Info.plist */,
 			);
 			path = SwiftySocial;
 			sourceTree = "<group>";
@@ -143,6 +170,12 @@
 			dependencies = (
 			);
 			name = SwiftySocial;
+			packageProductDependencies = (
+				ECDF85BC2B94D7DF0009EA9A /* FirebaseAuth */,
+				ECDF85BE2B94D7DF0009EA9A /* FirebaseFirestore */,
+				ECDF85C02B94D7DF0009EA9A /* FirebaseFirestoreSwift */,
+				ECDF85C22B94D7DF0009EA9A /* FirebaseStorage */,
+			);
 			productName = SwiftySocial;
 			productReference = ECDF85802B94BBD70009EA9A /* SwiftySocial.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +248,9 @@
 				Base,
 			);
 			mainGroup = ECDF85772B94BBD70009EA9A;
+			packageReferences = (
+				ECDF85B32B94BE080009EA9A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = ECDF85812B94BBD70009EA9A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECDF85902B94BBD80009EA9A /* LaunchScreen.storyboard in Resources */,
+				ECDF85C52B94E42D0009EA9A /* GoogleService-Info.plist in Resources */,
 				ECDF858D2B94BBD80009EA9A /* Assets.xcassets in Resources */,
 				ECDF858B2B94BBD70009EA9A /* Main.storyboard in Resources */,
 			);
@@ -241,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDF85C62B94E42D0009EA9A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDF85C72B94E42D0009EA9A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +298,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECDF85882B94BBD70009EA9A /* ViewController.swift in Sources */,
+				ECA6C7612B9A2ACD00B76979 /* UploadViewController.swift in Sources */,
 				ECDF85842B94BBD70009EA9A /* AppDelegate.swift in Sources */,
+				ECA6C75F2B9A26B300B76979 /* FeedViewController.swift in Sources */,
+				ECA6C7652B9A2B4B00B76979 /* ProfileViewController.swift in Sources */,
 				ECDF85862B94BBD70009EA9A /* SceneDelegate.swift in Sources */,
+				ECDF85B52B94D18C0009EA9A /* RegViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECDF859B2B94BBD90009EA9A /* SwiftySocialTests.swift in Sources */,
+				ECDF85B62B94D18C0009EA9A /* RegViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECDF85A52B94BBD90009EA9A /* SwiftySocialUITests.swift in Sources */,
+				ECDF85B72B94D18C0009EA9A /* RegViewController.swift in Sources */,
 				ECDF85A72B94BBD90009EA9A /* SwiftySocialUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,9 +493,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,9 +521,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -609,6 +652,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECDF85B32B94BE080009EA9A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECDF85BC2B94D7DF0009EA9A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECDF85B32B94BE080009EA9A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		ECDF85BE2B94D7DF0009EA9A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECDF85B32B94BE080009EA9A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		ECDF85C02B94D7DF0009EA9A /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECDF85B32B94BE080009EA9A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		ECDF85C22B94D7DF0009EA9A /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECDF85B32B94BE080009EA9A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECDF85782B94BBD70009EA9A /* Project object */;
 }
