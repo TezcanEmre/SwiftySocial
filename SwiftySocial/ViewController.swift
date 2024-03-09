@@ -22,8 +22,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func passResetButtonClicked(_ sender: Any) {
-        
-    }
+            let email = mailTextField.text!
+            Auth.auth().sendPasswordReset(withEmail: email) { error in
+                if error != nil {
+                    self.errorMessage(titleInput: "Error!", messageInput: error?.localizedDescription ?? "Please check internet connection and try again" ) }
+                else { self.errorMessage(titleInput: "Success", messageInput: "Password reset mail send!")}
+            }
+            }
     
     @IBAction func loginButtonClicked(_ sender: Any) {
         if mailTextField.text != "" && passwordTextField.text != "" {
