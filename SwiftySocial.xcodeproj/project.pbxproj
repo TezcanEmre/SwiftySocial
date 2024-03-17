@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC7AB6FF2BA731DE00277A11 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7AB6FE2BA731DE00277A11 /* FeedCell.swift */; };
+		EC90E2262BA766EC0019A2A1 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = EC90E2252BA766EC0019A2A1 /* SDWebImage */; };
 		ECA5BEB82B9A5E470067B5EE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = ECA5BEB72B9A5E470067B5EE /* FirebaseDatabase */; };
 		ECA5BEBA2B9A5E470067B5EE /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = ECA5BEB92B9A5E470067B5EE /* FirebaseStorageCombine-Community */; };
 		ECA6C75F2B9A26B300B76979 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6C75E2B9A26B300B76979 /* FeedViewController.swift */; };
@@ -81,6 +82,7 @@
 				ECA5BEB82B9A5E470067B5EE /* FirebaseDatabase in Frameworks */,
 				ECDF85BD2B94D7DF0009EA9A /* FirebaseAuth in Frameworks */,
 				ECDF85C32B94D7DF0009EA9A /* FirebaseStorage in Frameworks */,
+				EC90E2262BA766EC0019A2A1 /* SDWebImage in Frameworks */,
 				ECDF85BF2B94D7DF0009EA9A /* FirebaseFirestore in Frameworks */,
 				ECA5BEBA2B9A5E470067B5EE /* FirebaseStorageCombine-Community in Frameworks */,
 				ECDF85C12B94D7DF0009EA9A /* FirebaseFirestoreSwift in Frameworks */,
@@ -184,6 +186,7 @@
 				ECDF85C22B94D7DF0009EA9A /* FirebaseStorage */,
 				ECA5BEB72B9A5E470067B5EE /* FirebaseDatabase */,
 				ECA5BEB92B9A5E470067B5EE /* FirebaseStorageCombine-Community */,
+				EC90E2252BA766EC0019A2A1 /* SDWebImage */,
 			);
 			productName = SwiftySocial;
 			productReference = ECDF85802B94BBD70009EA9A /* SwiftySocial.app */;
@@ -259,6 +262,7 @@
 			mainGroup = ECDF85772B94BBD70009EA9A;
 			packageReferences = (
 				ECDF85B32B94BE080009EA9A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				EC90E2242BA766EC0019A2A1 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = ECDF85812B94BBD70009EA9A /* Products */;
 			projectDirPath = "";
@@ -664,6 +668,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		EC90E2242BA766EC0019A2A1 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.0;
+			};
+		};
 		ECDF85B32B94BE080009EA9A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -675,6 +687,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EC90E2252BA766EC0019A2A1 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC90E2242BA766EC0019A2A1 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		ECA5BEB72B9A5E470067B5EE /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ECDF85B32B94BE080009EA9A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

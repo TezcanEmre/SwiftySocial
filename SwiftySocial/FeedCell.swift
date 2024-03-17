@@ -10,7 +10,7 @@ import UIKit
 class FeedCell: UITableViewCell {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var feedImageView: UIImageView!
-    @IBOutlet weak var commentLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     
     
