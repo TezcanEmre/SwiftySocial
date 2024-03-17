@@ -27,8 +27,7 @@ class RegViewController: UIViewController {
                     self.errorMessage(titleInput: "Congrats!", messageInput: "Account created succesfully!")
                     self.toLoginVC() } } }
         
-        else {
-            errorMessage(titleInput: "Error!", messageInput: "Please fill all lines!") } }
+        else { errorMessage(titleInput: "Error!", messageInput: "Please fill all lines!") } }
     
     @IBAction func loginButtonClicked(_ sender: Any) { toLoginVC() }
     func errorMessage (titleInput: String, messageInput: String) {

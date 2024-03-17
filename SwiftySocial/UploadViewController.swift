@@ -20,11 +20,8 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         uploadImageView.isUserInteractionEnabled = true
         let gestureRecog2 = UITapGestureRecognizer(target: self, action: #selector(takeImage))
         view.addGestureRecognizer(gestureRecog1)
-        uploadImageView.addGestureRecognizer(gestureRecog2)
-        
-        // Do any additional setup after loading the view.
-        
-    }
+        uploadImageView.addGestureRecognizer(gestureRecog2) }
+    
     @objc func hideKeyboard() { view.endEditing(true) }
     @objc func takeImage() {
         let picker = UIImagePickerController()
@@ -37,14 +34,13 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         shareButton.isEnabled = true
         self.dismiss(animated: true, completion: nil) }
     
-    
-    
     @IBAction func shareButtonClicked(_ sender: Any) {
         let storage = Storage.storage()
         let storageRef = storage.reference()
         let mediaFolder = storageRef.child("userMedia")
         if let imgData = uploadImageView.image?.jpegData(compressionQuality: 0.6) {
-            let imgRef = mediaFolder.child("image.jpg")
+            let photoUUID = UUID().uuidString
+            let imgRef = mediaFolder.child("\(photoUUID).jpg")
             imgRef.putData(imgData, metadata: nil) { (strMetaData, error) in
                 if error != nil {
                     self.errorMessage(titleInput: "Error!", messageInput: error?.localizedDescription ?? "Please try again" ) }
@@ -52,13 +48,16 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                     imgRef.downloadURL { url, error in
                         if error == nil {
                             let imgUrl = url?.absoluteString
-                            print(imgUrl)
-                        }
-                    }
-                }
+                            if let imgUrl = imgUrl {
+                                let firestoreDatabase = Firestore.firestore()
+                                let firestorePost = [ "imageURL": imgUrl, "comment": self.descriptionTextField.text!, "email": Auth.auth().currentUser!.email!, "date": FieldValue.serverTimestamp()  ] as [String : Any]
+                                firestoreDatabase.collection("Post").addDocument(data: firestorePost) { error in
+                                    if error != nil { self.errorMessage(titleInput: "Error!", messageInput: error?.localizedDescription ?? "Please try again.") }
+                                    else { self.descriptionTextField.text = ""
+                                        self.uploadImageView.image = UIImage(named: "uploadIcon")
+                                        self.tabBarController?.selectedIndex = 0 } } } } } }
             }
         }
-
     }
     func errorMessage (titleInput: String, messageInput: String) {
         let alert = UIAlertController(title: titleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
@@ -67,6 +66,9 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.present(alert,animated: true, completion: nil) }
     
 
-   
+
 
 }
+
+
+
