@@ -56,7 +56,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                                     else { self.descriptionTextField.text = ""
                                         self.uploadImageView.image = UIImage(named: "uploadIcon")
                                         self.tabBarController?.selectedIndex = 0 } } } } } }
-            }
+        }
         }
     }
     func errorMessage (titleInput: String, messageInput: String) {
