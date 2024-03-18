@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EC7AB6FF2BA731DE00277A11 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7AB6FE2BA731DE00277A11 /* FeedCell.swift */; };
 		EC90E2262BA766EC0019A2A1 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = EC90E2252BA766EC0019A2A1 /* SDWebImage */; };
+		EC90E2482BA845B20019A2A1 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC90E2472BA845B20019A2A1 /* CommentViewController.swift */; };
 		ECA5BEB82B9A5E470067B5EE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = ECA5BEB72B9A5E470067B5EE /* FirebaseDatabase */; };
 		ECA5BEBA2B9A5E470067B5EE /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = ECA5BEB92B9A5E470067B5EE /* FirebaseStorageCombine-Community */; };
 		ECA6C75F2B9A26B300B76979 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6C75E2B9A26B300B76979 /* FeedViewController.swift */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		EC7AB6FE2BA731DE00277A11 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		EC90E2472BA845B20019A2A1 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		ECA6C75E2B9A26B300B76979 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		ECA6C7602B9A2ACD00B76979 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		ECA6C7642B9A2B4A00B76979 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				ECDF85B42B94D18C0009EA9A /* RegViewController.swift */,
 				ECA6C75E2B9A26B300B76979 /* FeedViewController.swift */,
 				EC7AB6FE2BA731DE00277A11 /* FeedCell.swift */,
+				EC90E2472BA845B20019A2A1 /* CommentViewController.swift */,
 				ECA6C7602B9A2ACD00B76979 /* UploadViewController.swift */,
 				ECA6C7642B9A2B4A00B76979 /* ProfileViewController.swift */,
 				ECDF85892B94BBD70009EA9A /* Main.storyboard */,
@@ -318,6 +321,7 @@
 				EC7AB6FF2BA731DE00277A11 /* FeedCell.swift in Sources */,
 				ECDF85862B94BBD70009EA9A /* SceneDelegate.swift in Sources */,
 				ECDF85B52B94D18C0009EA9A /* RegViewController.swift in Sources */,
+				EC90E2482BA845B20019A2A1 /* CommentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

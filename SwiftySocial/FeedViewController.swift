@@ -14,6 +14,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     var mailArray = [String]()
     var descriptionArray = [String]()
     var imageUrlArray = [String]()
+    var likeArray = [Int]()
+    var documentIDArray = [String]()
     
 
     @IBOutlet weak var feedTableView: UITableView!
@@ -28,29 +30,42 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     func getFeedData() {
         let firestoreDatabase = Firestore.firestore()
-        firestoreDatabase.collection("Post").addSnapshotListener { snapshot, error in
-            if error != nil { print(error!.localizedDescription) }
-                else {
-                    self.mailArray.removeAll()
-                                self.descriptionArray.removeAll()
-                                self.imageUrlArray.removeAll()
+        firestoreDatabase.collection("Post").order(by: "date", descending: true).addSnapshotListener { snapshot, error in
+            if error != nil {
+                print(error!.localizedDescription)
+            } else {
+                self.mailArray.removeAll(keepingCapacity: false)
+                self.descriptionArray.removeAll(keepingCapacity: false)
+                self.imageUrlArray.removeAll(keepingCapacity: false)
+                self.likeArray.removeAll(keepingCapacity: false)
+                self.documentIDArray.removeAll(keepingCapacity: false)
 
-                    if snapshot?.isEmpty != true && snapshot != nil {
-                        for document in snapshot!.documents {
-                            if let email = document.get("email") as? String {
-                                self.mailArray.append(email)
-                            }
-                            if let imageUrl = document.get("imageURL") as? String { self.imageUrlArray.append(imageUrl) }
-                            if let description = document.get("description") as? String {
-                                self.descriptionArray.append(description)
-                            }
+                if let snapshot = snapshot {
+                    for document in snapshot.documents {
+                        if let email = document.get("email") as? String {
+                            self.mailArray.append(email)
                         }
-                    
+                        if let like = document.get("likes") as? Int {
+                            self.likeArray.append(like)
+                        } else {
+                            self.likeArray.append(0)
+                        }
+                        if let imageUrl = document.get("imageURL") as? String {
+                            self.imageUrlArray.append(imageUrl)
+                        }
+                        if let description = document.get("description") as? String {
+                            self.descriptionArray.append(description)
+                             let docID = document.documentID
+                                self.documentIDArray.append(docID)
+                            
+                        }
                     }
-                    self.feedTableView.reloadData()
                 }
+                self.feedTableView.reloadData()
             }
         }
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mailArray.count }
     
@@ -59,7 +74,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.emailLabel.text = mailArray[indexPath.row]
         cell.descriptionLabel.text = descriptionArray[indexPath.row]
         cell.feedImageView.sd_setImage(with: URL(string: self.imageUrlArray[indexPath.row]))
-        print(imageUrlArray)
+        cell.likeLabel.text = String(likeArray[indexPath.row])
+        cell.documentID = documentIDArray[indexPath.row]
         return cell }
     }
     
