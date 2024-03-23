@@ -297,6 +297,10 @@
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tgw-5t-2k3">
                                                     <rect key="frame" x="5" y="36" width="365" height="175"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="365" id="Ojf-pz-0pm"/>
+                                                        <constraint firstAttribute="height" constant="175" id="ZUh-34-rnT"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy6-t6-DyZ">
                                                     <rect key="frame" x="5" y="234" width="365" height="21"/>

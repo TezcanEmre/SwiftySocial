@@ -46,6 +46,7 @@ class FeedCell: UITableViewCell {
     
     
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -57,5 +58,5 @@ class FeedCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

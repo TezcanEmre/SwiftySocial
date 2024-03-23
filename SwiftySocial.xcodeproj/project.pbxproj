@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC2A31822BAF66B7009ECD77 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2A31812BAF66B7009ECD77 /* Post.swift */; };
+		EC2A31832BAF66B7009ECD77 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2A31812BAF66B7009ECD77 /* Post.swift */; };
+		EC2A31842BAF66B7009ECD77 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2A31812BAF66B7009ECD77 /* Post.swift */; };
 		EC7AB6FF2BA731DE00277A11 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7AB6FE2BA731DE00277A11 /* FeedCell.swift */; };
 		EC90E2262BA766EC0019A2A1 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = EC90E2252BA766EC0019A2A1 /* SDWebImage */; };
 		EC90E2482BA845B20019A2A1 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC90E2472BA845B20019A2A1 /* CommentViewController.swift */; };
@@ -54,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC2A31812BAF66B7009ECD77 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		EC7AB6FE2BA731DE00277A11 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		EC90E2472BA845B20019A2A1 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		ECA6C75E2B9A26B300B76979 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				ECDF85872B94BBD70009EA9A /* ViewController.swift */,
 				ECDF85B42B94D18C0009EA9A /* RegViewController.swift */,
 				ECA6C75E2B9A26B300B76979 /* FeedViewController.swift */,
+				EC2A31812BAF66B7009ECD77 /* Post.swift */,
 				EC7AB6FE2BA731DE00277A11 /* FeedCell.swift */,
 				EC90E2472BA845B20019A2A1 /* CommentViewController.swift */,
 				ECA6C7602B9A2ACD00B76979 /* UploadViewController.swift */,
@@ -322,6 +327,7 @@
 				ECDF85862B94BBD70009EA9A /* SceneDelegate.swift in Sources */,
 				ECDF85B52B94D18C0009EA9A /* RegViewController.swift in Sources */,
 				EC90E2482BA845B20019A2A1 /* CommentViewController.swift in Sources */,
+				EC2A31822BAF66B7009ECD77 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2A31832BAF66B7009ECD77 /* Post.swift in Sources */,
 				ECDF859B2B94BBD90009EA9A /* SwiftySocialTests.swift in Sources */,
 				ECDF85B62B94D18C0009EA9A /* RegViewController.swift in Sources */,
 			);
@@ -341,6 +348,7 @@
 				ECDF85A52B94BBD90009EA9A /* SwiftySocialUITests.swift in Sources */,
 				ECDF85B72B94D18C0009EA9A /* RegViewController.swift in Sources */,
 				ECDF85A72B94BBD90009EA9A /* SwiftySocialUITestsLaunchTests.swift in Sources */,
+				EC2A31842BAF66B7009ECD77 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
